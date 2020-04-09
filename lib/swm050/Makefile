@@ -32,8 +32,14 @@ TGT_CFLAGS	= -Os \
 TGT_CFLAGS      += $(DEBUG_FLAGS)
 TGT_CFLAGS	+= $(STANDARD_FLAGS)
 ARFLAGS		= rcs
-OBJS		= gpio.o
 
+OBJS += clk.o
+OBJS += flash.o
+OBJS += gpio.o
+OBJS += pwr.o
+OBJS += syscon.o
+OBJS += timer.o
+OBJS += wdt.o
 VPATH += ../cm3
 
 include ../Makefile.include

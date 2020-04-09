@@ -22,6 +22,8 @@
 #	include <libopencm3/stm32/l4/nvic.h>
 #elif defined(STM32G0)
 #	include <libopencm3/stm32/g0/nvic.h>
+#elif defined(STM32H7)
+#	include <libopencm3/stm32/h7/nvic.h>
 
 #elif defined(GD32F1X0)
 #	include <libopencm3/gd32/f1x0/nvic.h>
@@ -77,6 +79,9 @@
 
 #elif defined(SWM050)
 #       include <libopencm3/swm050/nvic.h>
+
+#elif defined(PAC55XX)
+#       include <libopencm3/pac55xx/nvic.h>
 
 #else
 #	warning"no interrupts defined for chipset; NVIC_IRQ_COUNT = 0"
